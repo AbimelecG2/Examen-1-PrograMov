@@ -6,12 +6,19 @@ class HomePages extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('App CEUTEC'),
+        title: Text('APP CEUTEC'),
       ),
       drawer: MainDrawer(),
       body: Center(
-        child: Text('Bienvenido a la App CEUTEC'),
+        child: ListView(
+        children: <Widget>[
+          DrawerItem(icon: Icons.public, text: 'Noticias', onTap: () => Navigator.pushNamed(context, '/noticias')),
+          DrawerItem(icon: Icons.monetization_on, text: 'El cambio de Monedas', onTap: () => Navigator.pushNamed(context, '/cambioMonedas')),
+          DrawerItem(icon: Icons.list, text: 'Lista de tareas', onTap: () => Navigator.pushNamed(context, '/listaTareas')),
+          DrawerItem(icon: Icons.podcasts, text: 'Podcast', onTap: () => Navigator.pushNamed(context, '/podcast')),
+        ],
       ),
+   ),
     );
   }
 }
@@ -24,14 +31,14 @@ class MainDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-            child: Text('Menú', style: TextStyle(color: Colors.white)),
-            decoration: BoxDecoration(
-              color: Colors.blue,
+            child: Text('MENU', style: TextStyle(color: Colors.white)),
+            decoration: BoxDecoration( color: Color.fromARGB(255, 167, 20, 20),
             ),
           ),
-          DrawerItem(icon: Icons.public, text: 'Noticias', onTap: () => Navigator.pushNamed(context, '/noticias')),
+          DrawerItem(icon: Icons.home, text: 'Pagina Inicio', onTap: () => Navigator.pushNamed(context, '/home')),
+          DrawerItem(icon: Icons.feed, text: 'Noticias', onTap: () => Navigator.pushNamed(context, '/noticias')),
           DrawerItem(icon: Icons.monetization_on, text: 'El cambio de Monedas', onTap: () => Navigator.pushNamed(context, '/cambioMonedas')),
-          DrawerItem(icon: Icons.list, text: 'Lista de tareas', onTap: () => Navigator.pushNamed(context, '/listaTareas')),
+          DrawerItem(icon: Icons.view_list_outlined, text: 'Lista de tareas', onTap: () => Navigator.pushNamed(context, '/listaTareas')),
           DrawerItem(icon: Icons.podcasts, text: 'Podcast', onTap: () => Navigator.pushNamed(context, '/podcast')),
         ],
       ),

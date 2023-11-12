@@ -4,14 +4,14 @@ import 'package:flutter_examen1/src/pages/home_page.dart';
 import 'package:flutter_examen1/src/pages/noticias.dart';
 import 'package:flutter_examen1/src/pages/tareas.dart';
 import 'package:flutter_examen1/src/pages/podcast.dart';
-
+import 'package:flutter_examen1/src/pages/moneda.dart';
 
 Map<String, WidgetBuilder> getRoutes() {
   return <String, WidgetBuilder>{
-    '/': (context) => HomePages(),
+    '/home': (context) => HomePages(),
         '/noticias': (context) => Noticias(),
-        '/cambioMonedas': (context) => MonedasPage(),
-        '/listaTareas': (context) => TareasPage(),
-        '/podcast': (context) => PodcastPage(),
+        '/cambioMonedas': (context) => Moneda(),
+        '/listaTareas': (context) => Tareas(),
+        '/podcast': (context) => Podcast(),
   };
 }
