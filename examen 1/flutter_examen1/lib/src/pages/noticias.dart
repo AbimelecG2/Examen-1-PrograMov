@@ -10,16 +10,28 @@ class Noticias extends StatefulWidget {
 class _NoticiasPageState extends State<Noticias> {
   List<Noticia> noticias = [
      Noticia(
-      titulo: 'Bacon ipsum dolor sit amet',
-      descripcion: 'Porchetta turkey leberkas corned beef prosciutto ground...',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Fire_inside_an_abandoned_convent_in_Massueville%2C_Quebec%2C_Canada.jpg/800px-Fire_inside_an_abandoned_convent_in_Massueville%2C_Quebec%2C_Canada.jpg',
-      fecha: '20/11/2023',
+      titulo: 'Examenes Finales',
+      descripcion: 'Este Q4 2023 esta por finalizar, anunciando la llegada de los examenes...',
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Test_%28student_assessment%29.jpeg/1024px-Test_%28student_assessment%29.jpeg',
+      fecha: '12/11/2023',
     ),
      Noticia(
-      titulo: 'Bacon ipsum dolor sit amet',
-      descripcion: 'Porchetta turkey leberkas corned beef prosciutto ground...',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/20100516_Vacas_Vilarromar%C3%ADs%2C_Oroso-8-1.jpg/1024px-20100516_Vacas_Vilarromar%C3%ADs%2C_Oroso-8-1.jpg',
-      fecha: '20/11/2023',
+      titulo: 'Congreso de Informatica',
+      descripcion: 'La experincia informatica del congreso esta muy cerca de vivirse...',
+      imageUrl: 'https://tryengineering.org/wp-content/uploads/bigstock-Concept-Of-Programming-Coding-375861967-1024x576.jpg',
+      fecha: '18/11/2023',
+    ),
+    Noticia(
+      titulo: 'Feria de Empleo',
+      descripcion: 'Eres egresado o alumno activo de Ceutec y necesitas empleo...',
+      imageUrl: 'https://www.altonivel.com.mx/wp-content/uploads/2019/12/buscar-empleo.jpg',
+      fecha: '15/12/2023',
+    ),
+    Noticia(
+      titulo: 'Yo decido mi Camino',
+      descripcion: 'Tu puede elegir tu camino escogiendo la carrera que desees...',
+      imageUrl: 'https://scontent.fsap7-1.fna.fbcdn.net/v/t39.30808-6/376273050_701348262023379_1841666347530572835_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=nZa_S_U9ssgAX-g0SYs&_nc_ht=scontent.fsap7-1.fna&oh=00_AfDCtLCQcOA9qRvVIW6IyAxVXs5nIMfr6k28rvj47xusqg&oe=6555FC34',
+      fecha: '10/01/2024',
     ),// Añade más noticias aquí// Tus noticias aquí
   ];
 
@@ -28,7 +40,7 @@ class _NoticiasPageState extends State<Noticias> {
     return Scaffold(
       appBar: AppBar(
         title: Text('NOTICIAS'),
-      ),
+        backgroundColor: Color.fromARGB(255, 1, 8, 104)),
       drawer: MainDrawer(),
       body: ListView.builder(
         itemCount: noticias.length,
