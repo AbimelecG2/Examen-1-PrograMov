@@ -37,7 +37,7 @@ class _ConversorDivisasState extends State<Moneda> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Cambio de Moneda'),
+          'CAMBIO DE MONEDA'),
          backgroundColor: Color.fromARGB(255, 3, 113, 1), 
       ),
       drawer: MainDrawer(),
