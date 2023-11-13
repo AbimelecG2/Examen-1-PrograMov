@@ -7,6 +7,7 @@ class HomePages extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('APP CEUTEC'),
+        backgroundColor: Color.fromARGB(255, 167, 20, 20)
       ),
       drawer: MainDrawer(),
       body: Center(

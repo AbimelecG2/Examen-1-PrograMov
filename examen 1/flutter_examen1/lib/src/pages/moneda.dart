@@ -37,8 +37,8 @@ class _ConversorDivisasState extends State<Moneda> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Conversor de Divisas'),
-         backgroundColor: Colors.orange, 
+          'Cambio de Moneda'),
+         backgroundColor: Color.fromARGB(255, 3, 113, 1), 
       ),
       drawer: MainDrawer(),
       body: Center(
@@ -115,7 +115,7 @@ class _ConversorDivisasState extends State<Moneda> {
                   style: TextStyle(color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.orange,
+                  primary: Color.fromARGB(255, 3, 113, 1),
                 ),
               ),
               SizedBox(height:  20),
