@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_examen1/src/pages/home_page.dart';
+import 'package:flutter_examen1/src/pages/rutas/rutas.dart';
 
 void main() => runApp(const MainApp());
 
@@ -8,7 +8,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false, home:HomePages());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: getRoutes(),
+      initialRoute: '/home',
+    );
   }
 }

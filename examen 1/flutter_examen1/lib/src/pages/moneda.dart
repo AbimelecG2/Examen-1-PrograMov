@@ -54,7 +54,7 @@ class _ConversorDivisasState extends State<Moneda> {
               
            SizedBox(height: 20),
               Text(
-                'ORIGEN                                                           CAMBIO',
+                ' ',
                 style: TextStyle(fontSize: 18),
               ),
               Row(
